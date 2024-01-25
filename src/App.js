@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-
+import arsd from './arsd.svg'
+import user from './user.webp'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <main className='container'>
+        <div className='box'>
+          <img src={arsd} alt='hi' />
+          <span>Learning</span>
+          <p id='publish'>Published 21 Dec 2023</p>
+          <h1>HTML & CSS foundations</h1>
+          <p id='para'>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+          <span id='user'><img src={user} alt='user'/></span>
+          <span className='greg'>Greg Hooper</span>
+        </div>
+      </main>
     </div>
   );
 }
